@@ -130,6 +130,9 @@ return packer.startup(function(use)
 	use("goolord/alpha-nvim")
 	use("stevearc/dressing.nvim")
 
+	-- Undo tree
+	use("mbbill/undotree")
+
 	-- Misc
 	use("lewis6991/impatient.nvim")
 	use("akinsho/toggleterm.nvim")

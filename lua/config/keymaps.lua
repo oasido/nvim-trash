@@ -47,3 +47,13 @@ keymap("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>",
 -- Keep center when moving around documents
 keymap("n", "<C-d>", "<C-d>zz", opts)
 keymap("n", "<C-u>", "<C-u>zz", opts)
+
+-- Keep center on search
+keymap("n", "n", "nzzzv", opts)
+keymap("n", "N", "Nzzzv", opts)
+
+-- tmux-sessionizer
+keymap("n", "<leader>t", "<cmd>silent !tmux neww tmux-sessionizer<CR>", opts)
+
+-- Disable mouse right click
+keymap("n", "RightMouse", "<Nop>", opts)

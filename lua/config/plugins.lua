@@ -140,6 +140,14 @@ return packer.startup(function(use)
 	use("ThePrimeagen/vim-be-good")
 	use("aserowy/tmux.nvim")
 	use("wakatime/vim-wakatime")
+	use({
+		"folke/persistence.nvim",
+		event = "BufReadPre",
+		module = "persistence",
+		config = function()
+			require("persistence").setup()
+		end,
+	})
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()

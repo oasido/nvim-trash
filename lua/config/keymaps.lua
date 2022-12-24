@@ -53,3 +53,6 @@ keymap("n", "<leader>t", "<cmd>silent !tmux neww tmux-sessionizer<CR>", opts)
 
 -- Disable mouse right click
 keymap("n", "RightMouse", "<Nop>", opts)
+
+-- Copy/paste with buffer
+keymap("x", "<leader>p", [["_dP]], opts)

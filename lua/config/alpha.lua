@@ -28,7 +28,7 @@ import({ "alpha", "alpha.themes.dashboard" }, function(modules)
 	}
 
 	local function footer()
-		return "“Hoe gaat het?” – Ofek van Asido"
+		return "“Hi”"
 	end
 
 	dashboard.section.footer.val = footer()

@@ -21,7 +21,7 @@ import("which-key", function(whichKey)
 
 	local mappings = {
 		["w"] = { "<cmd>w<cr>", "Save" },
-		["q"] = { "<cmd>q<cr>", "Quit" },
+		--[[ ["q"] = { "<cmd>q<cr>", "Quit" }, ]]
 		["e"] = { "<cmd>Neotree toggle<cr>", "Toggle Explorer" },
 		["n"] = { "<cmd>nohl<cr>", "No highlight" },
 		["b"] = {

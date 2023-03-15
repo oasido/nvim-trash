@@ -148,6 +148,7 @@ return packer.startup(function(use)
 			require("persistence").setup()
 		end,
 	})
+	use("lambdalisue/suda.vim")
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()

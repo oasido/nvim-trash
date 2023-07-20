@@ -91,9 +91,9 @@ return packer.startup(function(use)
 	use("L3MON4D3/LuaSnip")
 	use("rafamadriz/friendly-snippets")
 	use("onsails/lspkind.nvim")
-	use("zbirenbaum/copilot.lua")
-	use("zbirenbaum/copilot-cmp")
-
+	--[[ use("zbirenbaum/copilot.lua") ]]
+	--[[ use("zbirenbaum/copilot-cmp") ]]
+  
 	-- LSP
 	use("williamboman/mason.nvim")
 	use("williamboman/mason-lspconfig.nvim")
@@ -101,7 +101,16 @@ return packer.startup(function(use)
 	use("b0o/SchemaStore.nvim")
 	use("jose-elias-alvarez/typescript.nvim")
 	use("simrat39/symbols-outline.nvim")
-	use("j-hui/fidget.nvim")
+	--[[ use("j-hui/fidget.nvim") ]]
+  use {
+  'j-hui/fidget.nvim',
+  tag = 'legacy',
+  config = function()
+    require("fidget").setup {
+      -- options
+    }
+  end,
+}
 	use("ray-x/lsp_signature.nvim")
 	use("smjonas/inc-rename.nvim")
 	use({
